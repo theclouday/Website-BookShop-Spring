@@ -25,6 +25,7 @@ public class BookControlller {
     public List<Book> findByAuthor(@PathVariable String author) {
         return bookService.findBookByAuthor(author);
     }
+
     @GetMapping("/find_book/by_id/{id}")
     public List<Book> findById(@PathVariable Long id) {
         return bookService.findBookById(id);
