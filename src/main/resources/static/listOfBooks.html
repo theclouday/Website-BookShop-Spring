@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List of all books</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 50px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Available Books</h1>
+    <ul id="bookList"></ul>
+
+    <button class="btnFindPage"><a href="/findBooks">Find books</a></button>
+
+    <script src="JavaScript/inputAllBooks.js"></script>
+</body>
+</html>
