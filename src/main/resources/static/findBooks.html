@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find your book</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Here you can find books</h2> <hr>
+
+    <h3>Find by Author name:</h3>
+    <form id="searchFormByAuthor">
+        <label for="author">Input author:</label>
+        <input type="text" id="author" name="author">
+        <button type="submit" id="searchButtonByAuthor">Find books</button>
+    </form>
+
+    <h3>Find by Book ID:</h3>
+    <form id="searchFormById">
+        <label for="bookId">Input book ID:</label>
+        <input type="number" id="bookId" name="bookId">
+        <button type="submit" id="searchButtonById">Find book by ID</button>
+    </form>
+
+    <div id="bookListAuthor"></div>
+    <div id="bookListId"></div>
+
+    <script src="JavaScript/findBooks.js"></script>
+</body>
+</html>
