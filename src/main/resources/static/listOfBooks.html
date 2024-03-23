@@ -8,9 +8,11 @@
             text-align: center;
         }
         form {
-            display: inline-block;
-            text-align: left;
-            margin-top: 50px;
+            display: block;
+            margin-top: 120px;
+            margin-bottom: 50px;
+            max-width: 200px;
+            margin: 0 auto;
         }
         ul {
             list-style-type: none;
@@ -19,15 +21,39 @@
         li {
             margin-bottom: 10px;
         }
-
+        #btnFindPage {
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+        #btnSubmit {
+            margin-top: 10px;
+        {
     </style>
 </head>
 <body>
     <h1>Available Books</h1>
-    <ul id="bookList"></ul>
+    <ul id="bookList"></ul><hr>
 
+    <h3>Find another books:</h3>
     <button class="btnFindPage"><a href="/findBooks">Find books</a></button>
 
+
+    <h3>Or create an advertisement for the sale of a book:</h3>
+    <form id="createBook">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author"><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="year">Year of Issue:</label>
+        <input type="text" id="year" name="year"><br>
+        <button type="submit" id="btnSubmit">Create Book</button>
+    </form>
+
+
+
     <script src="JavaScript/inputAllBooks.js"></script>
+    <script src="JavaScript/сreateBook.js"></script>
 </body>
 </html>
