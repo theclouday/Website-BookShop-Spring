@@ -6,7 +6,7 @@ document.getElementById("createBook").addEventListener("submit", function(event)
         title: document.getElementById("title").value,
         author: document.getElementById("author").value,
         description: document.getElementById("description").value,
-        year: document.getElementById("year").value
+        yearOfIssue: document.getElementById("yearOfIssue").value
     };
 
     fetch("/api/v1/create_books", {
